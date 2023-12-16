@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".hospital_5">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#FFC24D"
+        android:elevation="4dp"
+        >
+        <!-- 왼쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/back"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Left Button" />
+        <!-- 중앙 텍스트 -->
+        <TextView
+            android:id="@+id/tvCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="병원"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/btnRight"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_gravity="end"
+            android:src="@drawable/home"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Right Button" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/checked"></ImageView>
+
+    <TextView
+        android:id="@+id/finishText1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="접수 및 내원확인 완료"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/finishText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hospitalwaiting"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:text="10초 후 첫화면으로 이동합니다.">
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backToFirstbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="처음으로"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="40dp"
+        android:background="@drawable/editphone">
+    </androidx.appcompat.widget.AppCompatButton>
+</LinearLayout>

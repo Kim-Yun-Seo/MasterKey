@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mission_hospital_2">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#FFC24D"
+        android:elevation="4dp"
+        >
+        <!-- 왼쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/back"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Left Button" />
+
+        <!-- 중앙 텍스트 -->
+        <TextView
+            android:id="@+id/tvCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="병원"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/btnRight"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_gravity="end"
+            android:src="@drawable/home"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Right Button" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/secondTv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="원하시는 접수방법을 선택해주세요"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/secondTv1"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/editphone"
+            android:text="휴대전화번호"></androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="주민등록번호"></androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_qrcode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="QR 코드"></androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/editTextPhone2"
+        android:layout_width="377dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/secondTv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:hint="010-0000-0000"
+        android:inputType="phone"></EditText>
+
+    <ImageButton
+        android:id="@+id/btn_1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/editTextPhone2"
+        android:layout_toLeftOf="@id/btn_2"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/phonebtn1"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/btn_2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/editTextPhone2"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/phonebtn2"></ImageButton>
+    <ImageButton
+        android:id="@+id/btn_3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/editTextPhone2"
+        android:layout_toRightOf="@id/btn_2"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/phonebtn3"></ImageButton>
+    <ImageButton
+        android:id="@+id/btn_4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_1"
+        android:layout_toLeftOf="@id/btn_2"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/phonebtn4"></ImageButton>
+    <ImageButton
+        android:id="@+id/btn_5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_2"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/phonebtn5"></ImageButton>
+    <ImageButton
+        android:id="@+id/btn_6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_2"
+        android:layout_toRightOf="@id/btn_2"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/phonebtn6"></ImageButton>
+    <ImageButton
+        android:id="@+id/btn_7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_4"
+        android:layout_toLeftOf="@id/btn_2"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/phonebtn7"></ImageButton>
+    <ImageButton
+        android:id="@+id/btn_8"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_5"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/phonebtn8"></ImageButton>
+    <ImageButton
+        android:id="@+id/btn_9"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_5"
+        android:layout_toRightOf="@id/btn_2"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/phonebtn9"></ImageButton>
+    <ImageButton
+        android:id="@+id/btn_10"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_8"
+        android:layout_toLeftOf="@id/btn_2"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/phonebtn10"></ImageButton>
+    <ImageButton
+        android:id="@+id/btn_11"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_8"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/phonebtn11"></ImageButton>
+    <ImageButton
+        android:id="@+id/btn_12"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/btn_8"
+        android:layout_toRightOf="@id/btn_5"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/phonebtn12"></ImageButton>
+
+    <CheckBox
+        android:id="@+id/chkBx1"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_11"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text=" 개인정보수집 동의(필수)">
+    </CheckBox>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_back"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/editphone"
+            android:text="이전"
+            android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/editphone"
+            android:text="다음"
+            android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+</RelativeLayout>

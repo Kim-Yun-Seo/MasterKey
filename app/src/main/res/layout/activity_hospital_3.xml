@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".hospital_3">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#FFC24D"
+        android:elevation="4dp"
+        >
+        <!-- 왼쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/back"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Left Button" />
+        <!-- 중앙 텍스트 -->
+        <TextView
+            android:id="@+id/tvCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="병원"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/btnRight"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_gravity="end"
+            android:src="@drawable/home"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Right Button" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/acceptText"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="20dp"
+        android:gravity="center"
+        android:background="#FFE8C9"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="접수 환자 선택하기" ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="접수할 환자를 선택해주세요.\n 첫 방문시,  신규접수  해주세요."></TextView>
+
+    <CheckedTextView
+        android:id="@+id/chkTv1"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:background="@drawable/border"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:textAlignment="viewStart"
+        android:gravity="start|center_vertical"></CheckedTextView>
+
+    <CheckedTextView
+        android:id="@+id/chkTv2"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:background="@drawable/border"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:textAlignment="viewStart"
+        android:gravity="start|center_vertical" ></CheckedTextView>
+
+    <CheckedTextView
+        android:id="@+id/chkTv3"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:background="@drawable/border"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:textAlignment="viewStart"
+        android:gravity="start|center_vertical" ></CheckedTextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNew"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="신규접수\n 처음 방문한 분은 신규로 접수해주세요."
+        android:gravity="left"
+        android:padding="20dp"
+        android:background="@drawable/border"></androidx.appcompat.widget.AppCompatButton>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_back"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/editphone"
+            android:text="이전"
+            android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/editphone"
+            android:text="다음"
+            android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+</LinearLayout>
