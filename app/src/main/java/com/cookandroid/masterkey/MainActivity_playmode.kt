@@ -19,34 +19,34 @@ class MainActivity_playmode : AppCompatActivity() {
         val btnRightImageView = findViewById<ImageView>(R.id.btnRight)
         // Tool bar back button
         btnLeftImageView.setOnClickListener {
-            val intent = Intent(this, mission_hospital_start::class.java)
+            val intent = Intent(this, MainActivity_second::class.java)
             startActivity(intent)
         }
         // Tool bar Home Button
         btnRightImageView.setOnClickListener {
-            val intent = Intent(this, MainActivity_sencond::class.java)
+            val intent = Intent(this, MainActivity_second::class.java)
             startActivity(intent)
         }
 
         //cafe 실전모드 첫화면 연결
         btn_play_cafe.setOnClickListener {
             // Create an Intent to start the BusActivity
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, MainActivity_mission_cgv_start::class.java)
             startActivity(intent)
         }
         //bus 실전모드 첫화면 연결
         btn_play_bus.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, MainActivity_mission_cgv_start::class.java)
             startActivity(intent)
         }
         //cgv 실전모드 첫화면 연결
         btn_play_cgv.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, MainActivity_mission_cgv_start::class.java)
             startActivity(intent)
         }
         //hosptial 실전모드 첫화면 연결
         btn_play_hospital.setOnClickListener {
-            val intent = Intent(this, mission_hospital_start::class.java)
+            val intent = Intent(this, MainActivity_mission_cgv_start::class.java)
             startActivity(intent)
         }
     }

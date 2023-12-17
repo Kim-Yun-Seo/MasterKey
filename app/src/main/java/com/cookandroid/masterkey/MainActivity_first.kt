@@ -13,7 +13,7 @@ class MainActivity_first : AppCompatActivity() {
 
         // 5초 후 MainActivitySecond로 전환
         Handler().postDelayed({
-            val intent = Intent(this@MainActivity_first, MainActivity_sencond::class.java)
+            val intent = Intent(this@MainActivity_first, MainActivity_second::class.java)
             startActivity(intent)
             finish() // 현재 액티비티 종료
         }, DELAY_TIME)
