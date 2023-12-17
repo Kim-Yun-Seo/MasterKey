@@ -3,5 +3,5 @@
     <item
         android:drawable="@drawable/pic3_cgv"
         android:width="130dp"
-        android:height="460px" />
+        android:height="550px" />
 </layer-list>
