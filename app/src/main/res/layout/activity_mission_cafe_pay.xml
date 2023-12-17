@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mission_cafe_pay">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#FFC24D"
+        android:elevation="4dp"
+        >
+
+        <!-- 왼쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/back"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Left Button" />
+
+        <!-- 중앙 텍스트 -->
+        <TextView
+            android:id="@+id/tvCenter_cafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="이디야"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- 오른쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/home_toolbar"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Right Button" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvDescription_cafe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:text="EDIYA COFFEE"
+        android:background="#3A4EFF"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <!-- 버튼 그리드 -->
+    <GridLayout
+        android:id="@+id/gridLayoutButtons_cafe"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:columnCount="4"
+        android:rowCount="2"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <!-- 버튼 1 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="COFFEE"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+        <!-- 버튼 2 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="베버리지"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+        <!-- 버튼 3 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="블렌딩 티"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+        <!-- 버튼 4 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn4_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="에이드"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+        <!-- 버튼 5 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn5_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="쉐이크,아포가토"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+        <!-- 버튼 6 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn6_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="플랫치노"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+        <!-- 버튼 7 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn7_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="버블 밀크티"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+        <!-- 버튼 8 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn8_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="베이커리"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="#3A4EFF"
+        android:textSize="18sp"
+        android:text="Step 2."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="결제 방식을 선택해주세요"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/card_pay_cafe"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="35dp"
+        android:background="@drawable/blackborder_cafe"
+        android:text="카드 결제\n(삼성,LG 페이 포함)"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/etc_pay_cafe"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="220dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:background="@drawable/blackborder_cafe"
+        android:text="기타결제\n- 이디야멤버스 쿠폰\n- 모바일쿠폰"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
+

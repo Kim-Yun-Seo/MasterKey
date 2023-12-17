@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mission_cgv1">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#FFC24D"
+        android:elevation="4dp"
+        >
+
+        <!-- 왼쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/left_arrow_cgv"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Left Button" />
+
+        <!-- 중앙 텍스트 -->
+        <TextView
+            android:id="@+id/topBuyTicket_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="티켓구매"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- 오른쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/home_toolbar"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Right Button" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F8E1C1"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="45dp" />
+
+        <ImageView
+            android:id="@+id/rocoCGV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/cgv_rogo_cgv" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImgAndroidCGV"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="5dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/commentCGV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="무엇을 하고 싶으세요?"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/IB_buyTicket_cgv"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="onImageButtonClick"
+            android:src="@drawable/buy_ticket_cgv" />
+
+        <ImageButton
+            android:id="@+id/IB_printTicket_cgv"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="onImageButtonClick"
+            android:src="@drawable/ticket_output_cgv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/IB_1_1_cgv"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="onImageButtonClick"
+            android:src="@drawable/photoplay_cgv" />
+
+        <ImageButton
+            android:id="@+id/IB_1_2_cgv"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="onImageButtonClick"
+            android:src="@drawable/refund_cgv" />
+
+        <ImageButton
+            android:id="@+id/IB_1_3_cgv"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="onImageButtonClick"
+            android:src="@drawable/save_point_cgv" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Bus2_mission">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#FFC24D"
+        android:elevation="4dp">
+        <!-- 왼쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/back"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Left Button" />
+        <!-- 중앙 텍스트 -->
+        <TextView
+            android:id="@+id/tvCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="시외버스터미널"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/home_toolbar"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Right Button" />
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="43dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/calender_bus" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="출발일"
+            android:textSize="30dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnyesbus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이전날"
+            android:textSize="20dp"
+            android:backgroundTint="#CACACA"></Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="2023.12.24"
+            android:textSize="30dp"></TextView>
+
+        <Button
+            android:id="@+id/btnnebus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="다음날"
+            android:textSize="20dp"
+            android:backgroundTint="#CACACA"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/depbus"
+            android:layout_width="285dp"
+            android:layout_height="131dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#FFC107"
+            android:text="광주 유스퀘어"
+            android:textColor="#F6F6F6"
+            android:textSize="25dp"></Button>
+
+        <ImageView
+            android:layout_width="89dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow_bus"></ImageView>
+
+        <Button
+            android:id="@+id/desbus"
+            android:layout_width="284dp"
+            android:layout_height="136dp"
+            android:layout_margin="20dp"
+            android:backgroundTint="#FF9800"
+            android:text="도착지 선택"
+            android:textSize="34sp"></Button>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".hospital_1">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#FFC24D"
+        android:elevation="4dp"
+        >
+        <!-- 왼쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/back"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Left Button" />
+
+        <!-- 중앙 텍스트 -->
+        <TextView
+            android:id="@+id/tvCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="병원"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/home_toolbar"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Right Button" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".hospital_1">
+
+        <TextView
+            android:id="@+id/textTop1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#FFE8C9"
+            android:drawableLeft="@drawable/heartbeat_hospital"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="병원에 처음 방문하신 분은 데스크로 오세요."
+            android:textSize="15dp"></TextView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:singleLine="false"
+            android:text="여기에서\n접수/수납해주세요!"
+            android:textColor="#FF8038"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageButton
+            android:id="@+id/btnAccept"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/accept_hospital"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnPayment"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitCenter"
+            android:onClick="onClickImageButton"
+            android:src="@drawable/payment_hospital"></ImageButton>
+
+    </LinearLayout>
+
+</LinearLayout>

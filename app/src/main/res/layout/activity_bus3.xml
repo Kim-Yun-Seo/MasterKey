@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Bus3">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#FFC24D"
+        android:elevation="4dp">
+        <!-- 왼쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/back"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Left Button" />
+        <!-- 중앙 텍스트 -->
+        <TextView
+            android:id="@+id/tvCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="시외버스터미널"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/home_toolbar"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Right Button" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="340dp"
+            android:layout_height="61dp"
+            android:text="도착지 터미널명 선택"
+            android:textAlignment="center"></EditText>
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:backgroundTint="#00000000"
+            app:srcCompat="@drawable/search_bus" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp">
+
+                <Button
+                    android:id="@+id/btnall_bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:textSize="20dp"
+                    android:backgroundTint="#CDCBCB"
+                    android:text="전체"></Button>
+
+                <Button
+                    android:id="@+id/btnseoul_bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:textSize="20dp"
+                    android:backgroundTint="#CDCBCB"
+                    android:text="서울"></Button>
+
+                <Button
+                    android:id="@+id/btnin_bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:textSize="20dp"
+                    android:backgroundTint="#CDCBCB"
+                    android:text="인천"></Button>
+
+                <Button
+                    android:id="@+id/btn_kangwon_bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:textSize="20dp"
+                    android:backgroundTint="#CDCBCB"
+                    android:text="강원"></Button>
+
+                <Button
+                    android:id="@+id/btndae_bus1"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:textSize="20dp"
+                    android:backgroundTint="#CDCBCB"
+                    android:text="대전"></Button>
+
+                <Button
+                    android:id="@+id/btngyun_bus"
+                    android:layout_width="105dp"
+                    android:layout_height="70dp"
+                    android:textSize="20dp"
+                    android:backgroundTint="#CDCBCB"
+                    android:text="경기"></Button>
+
+                <Button
+                    android:id="@+id/btnchung_bus1"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:textSize="20dp"
+                    android:backgroundTint="#CDCBCB"
+                    android:text="충남"></Button>
+                <Button
+                    android:id="@+id/btnchung_bus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:textSize="20dp"
+                    android:backgroundTint="#CDCBCB"
+                    android:text="충북"></Button>
+
+                <Button
+                    android:id="@+id/sejongbus"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:textSize="20dp"
+                    android:backgroundTint="#CDCBCB"
+                    android:text="세종"></Button>
+
+                <Button
+                    android:id="@+id/btndae_bus2"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:textSize="20dp"
+                    android:backgroundTint="#CDCBCB"
+                    android:text="대구"></Button>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/a_bus"
+                    android:layout_width="60dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
+                    android:text="ㄱ"></Button>
+
+                <Button
+                    android:id="@+id/b_bus"
+                    android:layout_width="60dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
+                    android:text="ㄴ"></Button>
+
+                <Button
+                    android:id="@+id/c_bus"
+                    android:layout_width="60dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
+                    android:text="ㄷ"></Button>
+
+                <Button
+                    android:id="@+id/d_bus"
+                    android:layout_width="60dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
+                    android:text="ㄹ"></Button>
+
+                <Button
+                    android:id="@+id/e_bus"
+                    android:layout_width="60dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
+                    android:text="ㅁ"></Button>
+
+                <Button
+                    android:id="@+id/f_bus"
+                    android:layout_width="60dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
+                    android:text="ㅂ"></Button>
+
+                <Button
+                    android:id="@+id/g_bus"
+                    android:layout_width="60dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
+                    android:text="ㅅ"></Button>
+
+                <Button
+                    android:id="@+id/h_bus"
+                    android:layout_width="60dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
+                    android:text="ㅇ"></Button>
+
+                <Button
+                    android:id="@+id/i_bus"
+                    android:layout_width="60dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
+                    android:text="ㅈ"></Button>
+
+                <Button
+                    android:id="@+id/j_bus"
+                    android:layout_width="60dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
+                    android:text="ㅊ"></Button>
+            </LinearLayout>
+        </ScrollView>
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:visibility="gone">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/but1_bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="담양" />
+
+                <Button
+                    android:id="@+id/but2_bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="당목" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/but3bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="대덕" />
+
+                <Button
+                    android:id="@+id/but4bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="덕양" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/but5bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="도촌" />
+
+                <Button
+                    android:id="@+id/but6bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="독천" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/but7bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="동광양" />
+
+                <Button
+                    android:id="@+id/but8bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="땅끝" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/but9bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="마량" />
+
+                <Button
+                    android:id="@+id/but10bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="망운" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/but11bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="목사동" />
+
+                <Button
+                    android:id="@+id/but12bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="목포" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/but13bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="목포대" />
+
+                <Button
+                    android:id="@+id/but14bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="무안" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/but15bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="무안공항" />
+
+                <Button
+                    android:id="@+id/but16bus"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="문덕" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:visibility="gone">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/seoul_btn1"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="센트럴
+                시티" />
+
+                <Button
+                    android:id="@+id/seoul_btn2"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="고속버스터미널" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/seoul_btn3"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="서울역" />
+
+                <Button
+                    android:id="@+id/seoul_btn4"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
+                    android:text="동서울" />
+
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mission_cgv3">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#FFC24D"
+        android:elevation="4dp"
+        >
+
+        <!-- 왼쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/left_arrow_cgv"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Left Button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성신여대점"
+            android:textColor="#FDFDFD"
+            android:textSize="15dp" />
+
+        <!-- 중앙 텍스트 -->
+        <TextView
+            android:id="@+id/topBuyTicket_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="티켓구매"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- 오른쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/home_toolbar"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Right Button" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:padding="5dp">
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="160dp" />
+
+        <ImageButton
+            android:id="@+id/Poster3_1_cgv"
+            android:layout_width="130dp"
+            android:layout_height="550px"
+            android:src="@drawable/scaling_pic1_cgv"
+            android:onClick="onImageButtonClick"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/moveTitle_3_1_cgv"
+                android:text="그대들은 어떻게 살 것인가(자막)"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Theater_3_2_cgv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2관 11층(리클라이너)"
+                android:textColor="@color/material_dynamic_neutral40"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/moveTime_3_3_cgv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023.12.18(월)4회 21:10~23:24"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="360dp"
+        android:layout_height="3px"
+        android:layout_gravity="center"
+        android:background="#787878" />
+    <Space
+        android:layout_width="5dp"
+        android:layout_height="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/peopleChoiceGuide_3_4_cgv"
+            android:text="관람 인원수를 선택 해 주세요."
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+        <TextView
+            android:id="@+id/peopleChoiceGuide_3_5_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인원수 선택은 일반, 청소년을 더해 최대 7매까지 가능해요"
+            android:textColor="@color/material_dynamic_neutral40"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/adult_3_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일반"
+            android:textSize="18dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"/>
+        <Space
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:id="@+id/adultIB_3_0_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_0_cgv" />
+
+        <ImageButton
+            android:id="@+id/adultIB_3_1_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:src="@drawable/scaling_icon_circle_1_cgv"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="onImageButtonClick"/>
+
+        <ImageView
+            android:id="@+id/adultIB_3_2_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_2_cgv" />
+
+        <ImageView
+            android:id="@+id/adultIB_3_3_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_3_cgv" />
+
+        <ImageView
+            android:id="@+id/adultIB_3_4_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_4_cgv" />
+
+        <ImageView
+            android:id="@+id/adultIB_3_5_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_5_cgv" />
+
+        <ImageView
+            android:id="@+id/adultIB_3_6_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_6_cgv" />
+
+        <ImageView
+            android:id="@+id/adultIB_3_7_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_7_cgv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/teenager_3_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="청소년"
+            android:textSize="18dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/teenagerIB_3_0_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_0_cgv" />
+
+        <ImageButton
+            android:id="@+id/teenagerIB_3_1_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="onImageButtonClick"
+            android:src="@drawable/scaling_icon_circle_1_cgv" />
+
+        <ImageView
+            android:id="@+id/teenagerIB_3_2_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_2_cgv" />
+
+        <ImageView
+            android:id="@+id/teenagerIB_3_3_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_3_cgv" />
+
+        <ImageView
+            android:id="@+id/teenagerIB_3_4_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_4_cgv" />
+
+        <ImageView
+            android:id="@+id/teenagerIB_3_5_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_5_cgv" />
+
+        <ImageView
+            android:id="@+id/teenagerIB_3_6_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_6_cgv" />
+
+        <ImageView
+            android:id="@+id/teenagerIB_3_7_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_7_cgv" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/senior_3_1_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="경로"
+            android:textSize="18dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"/>
+        <Space
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+        <ImageView
+            android:id="@+id/seniorIB_4_0_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_0_cgv" />
+
+        <ImageButton
+            android:id="@+id/seniorIB_4_1_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="onImageButtonClick"
+            android:src="@drawable/scaling_icon_circle_1_cgv" />
+
+        <ImageView
+            android:id="@+id/seniorIB_4_2_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_2_cgv" />
+
+        <ImageView
+            android:id="@+id/seniorIB_4_3_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_3_cgv" />
+
+        <ImageView
+            android:id="@+id/seniorIB_4_4_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_4_cgv" />
+
+        <ImageView
+            android:id="@+id/seniorIB_4_5_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_5_cgv" />
+
+        <ImageView
+            android:id="@+id/seniorIB_4_6_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_6_cgv" />
+
+        <ImageView
+            android:id="@+id/seniorIB_4_7_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_7_cgv" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/senior_3_2_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="우대"
+            android:textSize="18dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/black"/>
+        <Space
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+        <ImageView
+            android:id="@+id/seniorIB_5_2_0_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_0_cgv" />
+
+        <ImageButton
+            android:id="@+id/seniorIB_5_2_1_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:onClick="onImageButtonClick"
+            android:src="@drawable/scaling_icon_circle_1_cgv" />
+
+        <ImageView
+            android:id="@+id/seniorIB_5_2_2_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_2_cgv" />
+
+        <ImageView
+            android:id="@+id/seniorIB_5_2_3_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_3_cgv" />
+
+        <ImageView
+            android:id="@+id/seniorIB_5_2_4_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_4_cgv" />
+
+        <ImageView
+            android:id="@+id/seniorIB_5_2_5_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_5_cgv" />
+
+        <ImageView
+            android:id="@+id/seniorIB_5_2_6_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_6_cgv" />
+
+        <ImageView
+            android:id="@+id/seniorIB_5_2_7_cgv"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/circle_7_cgv" />
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <View
+        android:layout_width="360dp"
+        android:layout_height="3px"
+        android:layout_gravity="center"
+        android:background="#787878" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="7dp">
+        <TextView
+            android:id="@+id/TotalPeople_3_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="총 선택인원"
+            android:textColor="@color/material_dynamic_neutral40"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="3px"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:background="#787878"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/TotalPeopleNum_3_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 명"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ChooseSeat_3_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9A9A9A"
+            android:text="좌석 선택하러 가기"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/round_button_cgv"/>
+    </LinearLayout>
+
+</LinearLayout>
