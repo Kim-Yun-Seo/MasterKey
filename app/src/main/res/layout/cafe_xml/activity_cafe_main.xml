@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".cafe_main">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#FFC24D"
+        android:elevation="4dp"
+        >
+
+        <!-- 왼쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/back"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Left Button" />
+
+        <!-- 중앙 텍스트 -->
+        <TextView
+            android:id="@+id/tvCenter_cafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="이디야"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- 오른쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:src="@drawable/home"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Right Button" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvDescription_cafe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:text="EDIYA COFFEE"
+        android:background="#3A4EFF"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <!-- 버튼 그리드 -->
+    <GridLayout
+        android:id="@+id/gridLayoutButtons_cafe"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:columnCount="4"
+        android:rowCount="2"
+        android:layout_marginTop="130dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal">
+
+        <!-- 버튼 1 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="COFFEE"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+        <!-- 버튼 2 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="베버리지"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+        <!-- 버튼 3 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="블렌딩 티"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+        <!-- 버튼 4 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn4_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="에이드"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+        <!-- 버튼 5 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn5_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="쉐이크,아포가토"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+        <!-- 버튼 6 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn6_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="플랫치노"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+        <!-- 버튼 7 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn7_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="버블 밀크티"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+        <!-- 버튼 8 -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn8_cafe"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="베이커리"
+            android:background="@android:color/transparent"
+            android:textStyle="bold" />
+
+    </GridLayout>
+    <GridLayout
+        android:visibility="visible"
+        android:id="@+id/bigGridLayout_cafe"
+        android:layout_width="match_parent"
+        android:layout_height="1400px"
+        android:layout_below="@+id/gridLayoutButtons_cafe"
+        android:layout_marginTop="5dp"
+        android:background="#E6E6E6"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:padding="2dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <LinearLayout
+            android:id="@+id/button1_cafe"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton1_cafe"
+                style="@style/menuImg"
+                android:src="@drawable/americano_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView1_cafe"
+                style="@style/menuText1"
+                android:text="(L) ICED 아메리카노"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩3200"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/button2_cafe"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton2_cafe"
+                style="@style/menuImg"
+                android:src="@drawable/decafam_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView2_cafe"
+                style="@style/menuText1"
+                android:text="(L) HOT 아메리카노"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩3200"
+                />
+        </LinearLayout>
+
+        <!-- 버튼 3 -->
+        <LinearLayout
+            android:id="@+id/button3_cafe"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton3_cafe"
+                style="@style/menuImg"
+                android:src="@drawable/topeanut_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView3_cafe"
+                style="@style/menuText1"
+                android:text="(L) ICED 토피넛라떼"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩4200"
+                />
+        </LinearLayout>
+
+        <!-- 버튼 4 -->
+        <LinearLayout
+            android:id="@+id/button4_cafe"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton4_cafe"
+                style="@style/menuImg"
+                android:src="@drawable/aspre_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView4_cafe"
+                style="@style/menuText1"
+                android:text="HOT 에스프레소"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩2900"
+                />
+        </LinearLayout>
+
+        <!-- 버튼 5 -->
+        <LinearLayout
+            android:id="@+id/button5_cafe"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton5_cafe"
+                style="@style/menuImg"
+                android:src="@drawable/caramel_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView5_cafe"
+                style="@style/menuText1"
+                android:text="(L) ICED 카라멜라떼"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩4500"
+                />
+        </LinearLayout>
+
+        <!-- 버튼 6 -->
+        <LinearLayout
+            android:id="@+id/button6_cafe"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton6_cafe"
+                style="@style/menuImg"
+                android:src="@drawable/lattee_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView6_cafe"
+                style="@style/menuText1"
+                android:text="(L) ICED 카페라떼"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩4200"
+                />
+        </LinearLayout>
+
+        <!-- 버튼 7 -->
+        <LinearLayout
+            android:id="@+id/button7_cafe"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton7_cafe"
+                style="@style/menuImg"
+                android:src="@drawable/mocca_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView7_cafe"
+                style="@style/menuText1"
+                android:text="(L) HOT 카페모카"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩4500"
+                />
+        </LinearLayout>
+
+        <!-- 버튼 8 -->
+        <LinearLayout
+            android:id="@+id/button8_cafe"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton8_cafe"
+                style="@style/menuImg"
+                android:src="@drawable/vanila_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView8_cafe"
+                style="@style/menuText1"
+                android:text="(L) ICED 바닐라라떼"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩4500"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/button9_cafe"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton9_cafe"
+                style="@style/menuImg"
+                android:src="@drawable/decaf_cold"
+                />
+
+            <TextView
+                android:id="@+id/textView9_cafe"
+                style="@style/menuText1"
+                android:text="(L) ICED 흑당콜드브루"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩4200"
+                />
+        </LinearLayout>
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:visibility="invisible"
+        android:id="@+id/bigGridLayout_cafe2"
+        android:layout_width="match_parent"
+        android:layout_height="1400px"
+        android:layout_below="@+id/gridLayoutButtons_cafe"
+        android:layout_marginTop="5dp"
+        android:background="#E6E6E6"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:padding="2dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <LinearLayout
+            android:id="@+id/button1_cafe2"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton1_cafe2"
+                style="@style/menuImg"
+                android:src="@drawable/bluemoon_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView1_cafe2"
+                style="@style/menuText1"
+                android:text="블루문 에이드"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩5500"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/button2_cafe2"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton2_cafe2"
+                style="@style/menuImg"
+                android:src="@drawable/ssang_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView2_cafe2"
+                style="@style/menuText1"
+                android:text="HOT 쌍화차"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩4200"
+                />
+        </LinearLayout>
+
+        <!-- 버튼 3 -->
+        <LinearLayout
+            android:id="@+id/button3_cafe2"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton3_cafe2"
+                style="@style/menuImg"
+                android:src="@drawable/saeng_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView3_cafe2"
+                style="@style/menuText1"
+                android:text="HOT 생강차"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩4200"
+                />
+        </LinearLayout>
+
+        <!-- 버튼 4 -->
+        <LinearLayout
+            android:id="@+id/button4_cafe2"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton4_cafe2"
+                style="@style/menuImg"
+                android:src="@drawable/dalgona_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView4_cafe2"
+                style="@style/menuText1"
+                android:text="ICED 달고나 라떼"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩3700"
+                />
+        </LinearLayout>
+
+        <!-- 버튼 5 -->
+        <LinearLayout
+            android:id="@+id/button5_cafe2"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton5_cafe2"
+                style="@style/menuImg"
+                android:src="@drawable/choco_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView5_cafe2"
+                style="@style/menuText1"
+                android:text="ICED 초콜릿"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩3900"
+                />
+        </LinearLayout>
+
+        <!-- 버튼 6 -->
+        <LinearLayout
+            android:id="@+id/button6_cafe2"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton6_cafe2"
+                style="@style/menuImg"
+                android:src="@drawable/nokcha_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView6_cafe2"
+                style="@style/menuText1"
+                android:text="ICED 녹차라떼"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩3900"
+                />
+        </LinearLayout>
+
+        <!-- 버튼 7 -->
+        <LinearLayout
+            android:id="@+id/button7_cafe2"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton7_cafe2"
+                style="@style/menuImg"
+                android:src="@drawable/gok_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView7_cafe2"
+                style="@style/menuText1"
+                android:text="HOT 12곡 라떼"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩3700"
+                />
+        </LinearLayout>
+
+        <!-- 버튼 8 -->
+        <LinearLayout
+            android:id="@+id/button8_cafe2"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton8_cafe2"
+                style="@style/menuImg"
+                android:src="@drawable/hong_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView8_cafe2"
+                style="@style/menuText1"
+                android:text="홍시주스"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩4500"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/button9_cafe2"
+            style="@style/StyledButton"
+            android:orientation="vertical"
+            android:onClick="onMenuClick">
+
+            <ImageView
+                android:id="@+id/imageButton9_cafe2"
+                style="@style/menuImg"
+                android:src="@drawable/goldkiwi_cafe"
+                />
+
+            <TextView
+                android:id="@+id/textView9_cafe2"
+                style="@style/menuText1"
+                android:text="골드키위주스"
+                />
+            <TextView
+                style="@style/menuText2"
+                android:text="₩4500"
+                />
+        </LinearLayout>
+
+
+    </GridLayout>
+    <ImageView
+        android:id="@+id/cafe_box1"
+        android:layout_width="wrap_content"
+        android:layout_height="250px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/cafe_box" />
+    <ImageView
+        android:id="@+id/cafe_box2"
+        android:layout_width="wrap_content"
+        android:layout_height="250px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/cafe_box" />
+
+    <ImageView
+        android:id="@+id/cafe_box3"
+        android:layout_width="wrap_content"
+        android:layout_height="250px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="180dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/cafe_box" />
+
+
+    <TextView
+        android:id="@+id/payAmount_cafe"
+        android:layout_width="wrap_content"
+        android:layout_height="250px"
+        android:padding="20px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="260dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:text="₩0"
+        android:textColor="#FF0000" />
+
+    <TextView
+        android:id="@+id/cancel_button_cafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="260dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="전체취소"
+        android:textColor="#001AFF" />
+
+
+    <ImageView
+        android:id="@+id/payBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="250px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="320dp"
+        android:layout_marginBottom="15dp"
+        android:padding="20px"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cart_pay_cafe" />
+
+
+</RelativeLayout>
