@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity6">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#FFC24D"
+        android:elevation="4dp"
+        >
+
+        <!-- 왼쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/left_arrow_cgv"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Left Button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성신여대점"
+            android:textColor="#FDFDFD"
+            android:textSize="15dp" />
+
+        <!-- 중앙 텍스트 -->
+        <TextView
+            android:id="@+id/topBuyTicket_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="티켓구매"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- 오른쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnRight"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_gravity="end"
+            android:src="@drawable/icon_home_cgv"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Right Button" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="160dp" />
+
+        <ImageView
+            android:id="@+id/Poster6_1_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scaling_pic1_cgv" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/moveTitle_6_1_cgv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="그대들은 어떻게 살 것인가(자막)"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/Theater_6_2_cgv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2관 11층(리클라이너)"
+                android:textColor="@color/material_dynamic_neutral40"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/moveTime_6_3_cgv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023.12.18(월)4회 21:10~23:24"
+                android:textSize="16dp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/moveseat_6_4_cgv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="좌석"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/moveseat_6_5_cgv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  E4"
+                    android:textColor="#FF0000"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/screen_cgv" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="A"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+        <Space
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/seat_6_A0_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_A1_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_A2_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_A3_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_A4_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_A5_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_A6_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_A7_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_A8_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Space
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="A"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="B"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+        <Space
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/seat_6_B0_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_B1_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_B2_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_B3_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_B4_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_B5_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_B6_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_B7_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_B8_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <Space
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="B"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="C"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+        <Space
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/seat_6_C0_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_C1_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_C2_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_C3_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_C4_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_C5_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_C6_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_C7_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_C8_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Space
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="C"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="D"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+        <Space
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/seat_6_D0_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_D1_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_D2_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_D3_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_D4_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_D5_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_D6_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_D7_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_D8_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+        <Space
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="D"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="E"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+        <Space
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/seat_6_E0_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_E1_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_E2_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_E3_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:text="E4"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            android:backgroundTint="#FF0000"/>
+        <Button
+            android:id="@+id/seat_6_E4_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_E5_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_E6_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Space
+            android:layout_width="83dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="E"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="F"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+        <Space
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+        <Button
+            android:id="@+id/seat_6_F0_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_F1_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_F2_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_F3_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_F4_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_6_F5_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_6_F6_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Space
+            android:layout_width="83dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="F"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="G"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+        <Space
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/seat_5_G1_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_5_G2_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_5_G3_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_5_G4_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_5_G5_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_5_G6_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_5_G7_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Space
+            android:layout_width="83dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="G"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="H"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+        <Space
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/seat_5_H0_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_5_H1_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_5_H2_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_5_H3_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_5_H4_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_5_H5_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_5_H6_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <Button
+            android:id="@+id/seat_5_H7_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Button
+            android:id="@+id/seat_5_H8_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+        <Space
+
+            android:layout_width="11dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="H"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/seatchoicebox_6_1_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="#FF0000"/>
+
+        <TextView
+            android:id="@+id/seatchoicebox_6_2_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="선택"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/reservedbox_6_1_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:id="@+id/reservedbox_6_2_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="예매완료"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/reclinerbox_6_1_cgv"
+            style="@android:style/Widget.Button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="#5FB3BD"/>
+
+        <TextView
+            android:id="@+id/reclinerbox_6_2_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Recliner"
+            android:textColor="#989898"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <View
+        android:layout_width="360dp"
+        android:layout_height="3px"
+        android:layout_gravity="center"
+        android:background="#787878" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/TotalPeople_6_1_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="총 선택인원"
+            android:textColor="@color/material_dynamic_neutral40"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="3px"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="#787878" />
+
+        <TextView
+            android:id="@+id/TotalPeople_6_2_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1명"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/TotalPrice_6_1_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="총 결제금액"
+            android:textColor="@color/material_dynamic_neutral40"
+            android:textSize="16dp" />
+
+        <View
+            android:layout_width="3px"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="#787878" />
+
+        <TextView
+            android:id="@+id/TotalPrice_6_2_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15000원"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/pay_6_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="결제하기"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/round_button_cgv" />
+    </LinearLayout>
+
+</LinearLayout>
