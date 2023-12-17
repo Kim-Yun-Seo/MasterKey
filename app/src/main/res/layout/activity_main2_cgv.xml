@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".cgv2">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="#FFC24D"
+        android:elevation="4dp"
+        >
+
+        <!-- 왼쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:src="@drawable/left_arrow_cgv"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Left Button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성신여대점"
+            android:textColor="#FDFDFD"
+            android:textSize="15dp" />
+
+        <!-- 중앙 텍스트 -->
+        <TextView
+            android:id="@+id/topBuyTicket_cgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="티켓구매"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true" />
+
+        <!-- 오른쪽 버튼 -->
+        <ImageView
+            android:id="@+id/btnRight"
+            android:layout_width="180px"
+            android:layout_height="180px"
+            android:layout_gravity="end"
+            android:src="@drawable/icon_home_cgv"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:contentDescription="Right Button" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/upArrow_2_cgv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/icon_up_arrow_cgv"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/Button2_1_cgv"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_button_cgv"
+            android:backgroundTint="#FFC24D"
+            android:text="영화관 및 예매일 변경"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="45dp" />
+
+        <Button
+            android:id="@+id/Button2_2_cgv"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/round_button_cgv"
+            android:backgroundTint="#FFC24D"
+            android:text="영화관별 상영 시간표 보기"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <Space
+        android:layout_width="5dp"
+        android:layout_height="30dp" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/Poster2_1_cgv"
+            android:layout_width="120dp"
+            android:layout_height="550px"
+            android:layout_margin="5dp"
+            android:src="@drawable/scaling_pic1_cgv"
+            android:onClick="onImageButtonClick"/>
+
+        <ImageButton
+            android:id="@+id/Poster2_2_cgv"
+            android:layout_width="120dp"
+            android:layout_height="550px"
+            android:layout_margin="5dp"
+            android:src="@drawable/scaling_pic2_cgv"
+            android:onClick="onImageButtonClick"/>
+
+        <ImageButton
+            android:id="@+id/Poster2_3_cgv"
+            android:layout_width="120dp"
+            android:layout_height="550px"
+            android:layout_margin="5dp"
+            android:src="@drawable/scaling_pic3_cgv"
+            android:onClick="onImageButtonClick"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/Poster2_4_cgv"
+            android:layout_width="120dp"
+            android:layout_height="550px"
+            android:layout_margin="5dp"
+            android:src="@drawable/scaling_pic4_cgv"
+            android:onClick="onImageButtonClick"/>
+
+        <ImageButton
+            android:id="@+id/Poster2_5_cgv"
+            android:layout_width="120dp"
+            android:layout_height="550px"
+            android:layout_margin="5dp"
+            android:src="@drawable/scaling_pic5_cgv"
+            android:onClick="onImageButtonClick"/>
+
+        <Space
+            android:layout_width="120dp"
+            android:layout_height="550px" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="5dp"
+        android:layout_height="30dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/downArrow_2_cgv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/icon_down_arrow_cgv"/>
+    </LinearLayout>
+
+</LinearLayout>
