@@ -24,7 +24,9 @@ class mission_cafe_pay : AppCompatActivity() {
         }
 
         cardPayButton.setOnClickListener {
-            var intent = Intent(this, cafe_end_real::class.java)
+
+            var intent = Intent(this, cafe_end_real_play::class.java)
+
             startActivity(intent)
         }
     }

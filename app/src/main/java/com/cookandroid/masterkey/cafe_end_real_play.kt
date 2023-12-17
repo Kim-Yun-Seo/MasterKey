@@ -9,20 +9,20 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatButton
 
-class cafe_end_real : AppCompatActivity() {
+class cafe_end_real_play : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cafe_end_real)
+        setContentView(R.layout.activity_cafe_end_real_play)
 
         val goTohomeButton: AppCompatButton = findViewById(R.id.goToHome)
         val kioskAgain: AppCompatButton = findViewById(R.id.kioskAgain)
 
         goTohomeButton.setOnClickListener {
-            var intent = Intent(this, cafe_main::class.java)
+            var intent = Intent(this, MainActivity_sencond::class.java)
             startActivity(intent)
         }
         kioskAgain.setOnClickListener {
-            var intent = Intent(this, cafe_main::class.java)
+            var intent = Intent(this, MainActivity_playmode::class.java)
             startActivity(intent)
         }
     }

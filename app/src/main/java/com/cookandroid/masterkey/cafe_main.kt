@@ -50,7 +50,8 @@ class cafe_main : AppCompatActivity() {
         }
 
         toPayButton.setOnClickListener {
-            var intent = Intent(this, mission_cafe_cart::class.java)
+            var intent = Intent(this, cafe_cart::class.java)
+
             startActivity(intent)
         }
 

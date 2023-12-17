@@ -51,10 +51,7 @@ class mission_cafe_cart : AppCompatActivity() {
             menuTextCancel(text9)
             cartBoxCancel(cafeBox1)
             cartBoxCancel(cafeBox2)
-
         }
-
-
 
     }
     private fun changeText(textView: TextView) {
