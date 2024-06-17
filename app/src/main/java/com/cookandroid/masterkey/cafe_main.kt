@@ -31,6 +31,20 @@ class cafe_main : AppCompatActivity() {
         val gridLayout: GridLayout = findViewById(R.id.bigGridLayout_cafe)
         val gridLayout2: GridLayout = findViewById(R.id.bigGridLayout_cafe2)
 
+        // Tool bar back button
+        backButton.setOnClickListener {
+            val intent = Intent(this, MainActivity_practicemode::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        // Tool bar Home Button
+        homeButton.setOnClickListener {
+            val intent = Intent(this, MainActivity_sencond::class.java)
+            startActivity(intent)
+            finish()
+        }
+
 
         americanoButton.setOnClickListener {
             // 클릭 시 수행할 동작

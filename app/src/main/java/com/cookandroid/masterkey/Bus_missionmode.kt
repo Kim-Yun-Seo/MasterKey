@@ -24,7 +24,7 @@ class Bus_missionmode : AppCompatActivity() {
 
         Home.setOnClickListener {
             // Handle the click on home button
-            val intent = Intent(this, MainActivity_playmode::class.java)
+            val intent = Intent(this, MainActivity_sencond::class.java)
             startActivity(intent)
         }
     }

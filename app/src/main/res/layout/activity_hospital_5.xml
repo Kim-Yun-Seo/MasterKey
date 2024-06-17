@@ -36,10 +36,10 @@
 
         <ImageView
             android:id="@+id/btnRight"
-            android:layout_width="180px"
-            android:layout_height="180px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:src="@drawable/home"
+            android:src="@drawable/home_toolbar"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:contentDescription="Right Button" />
@@ -69,7 +69,7 @@
         android:id="@+id/finishText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/hospitalwaiting"
+        android:src="@drawable/waiting_hospital"
         android:layout_gravity="center"
         android:layout_marginTop="30dp">
     </ImageView>
@@ -92,6 +92,6 @@
         android:layout_marginTop="10dp"
         android:paddingVertical="10dp"
         android:paddingHorizontal="40dp"
-        android:background="@drawable/editphone">
+        android:background="@drawable/editbox2_hospital">
     </androidx.appcompat.widget.AppCompatButton>
 </LinearLayout>

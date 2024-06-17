@@ -13,7 +13,16 @@
         android:theme="@style/Theme.MasterKey"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity_playmode"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_practicemode"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_sencond"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_first"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +30,171 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".mission_hospital_5"
+            android:exported="false" />
+        <activity
+            android:name=".mission_hospital_4"
+            android:exported="false" />
+        <activity
+            android:name=".mission_hospital_3"
+            android:exported="false" />
+        <activity
+            android:name=".mission_hospital_2"
+            android:exported="false" />
+        <activity
+            android:name=".mission_hospital_1"
+            android:exported="false" />
+        <activity
+            android:name=".mission_hospital_start"
+            android:exported="true"/>
+        <activity
+            android:name=".hosptial_success_finish"
+            android:exported="false" />
+        <activity
+            android:name=".hospital_5"
+            android:exported="false" />
+        <activity
+            android:name=".hospital_4"
+            android:exported="false" />
+        <activity
+            android:name=".hospital_3"
+            android:exported="false" />
+        <activity
+            android:name=".hospital_2"
+            android:exported="false" />
+        <activity
+            android:name=".hospital_1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Bus6_mission"
+            android:exported="false" />
+        <activity
+            android:name=".Bus5_mission"
+            android:exported="false" />
+        <activity
+            android:name=".Bus4_mission"
+            android:exported="false" />
+        <activity
+            android:name=".Bus3_mission"
+            android:exported="false" />
+        <activity
+            android:name=".Bus2_mission"
+            android:exported="false" />
+        <activity
+            android:name=".Bus1_mission"
+            android:exported="false" />
+        <activity
+            android:name=".Bus_missionsucceed"
+            android:exported="false" />
+        <activity
+            android:name=".Bus_missionmode"
+            android:exported="false" />
+        <activity
+            android:name=".Bus6"
+            android:exported="false" />
+        <activity
+            android:name=".Bus4"
+            android:exported="false" />
+        <activity
+            android:name=".Bus5"
+            android:exported="false" />
+        <activity
+            android:name=".Bus3"
+            android:exported="false" />
+        <activity
+            android:name=".Bus2"
+            android:exported="false" />
+        <activity
+            android:name=".Bus1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_mission_cgv_start"
+            android:exported="false" />
+        <activity
+            android:name=".mission_cgv1"
+            android:exported="false" />
+        <activity
+            android:name=".mission_cgv2"
+            android:exported="false" />
+        <activity
+            android:name=".mission_cgv3"
+            android:exported="false" />
+        <activity
+            android:name=".mission_cgv4"
+            android:exported="false" />
+        <activity
+            android:name=".mission_cgv5"
+            android:exported="false" />
+        <activity
+            android:name=".mission_cgv6"
+            android:exported="false" />
+        <activity
+            android:name=".mission_cgv7"
+            android:exported="false" />
+        <activity
+            android:name=".mission_cgv8"
+            android:exported="false" />
+        <activity
+            android:name=".cgv1"
+            android:exported="false" />
+        <activity
+            android:name=".cgv2"
+            android:exported="false" />
+        <activity
+            android:name=".cgv3"
+            android:exported="false" />
+        <activity
+            android:name=".cgv4"
+            android:exported="false" />
+        <activity
+            android:name=".cgv5"
+            android:exported="false" />
+        <activity
+            android:name=".cgv6"
+            android:exported="false" />
+        <activity
+            android:name=".cgv7"
+            android:exported="false" />
+        <activity
+            android:name=".cgv8"
+            android:exported="false" />
+        <activity
+            android:name=".mission_cafe_first"
+            android:exported="false" />
+        <activity
+            android:name=".mission_cafe_pay"
+            android:exported="false" />
+        <activity
+            android:name=".mission_cafe_point"
+            android:exported="false" />
+        <activity
+            android:name=".mission_cafe_cart"
+            android:exported="false" />
+        <activity
+            android:name=".mission_cafe_main"
+            android:exported="false" />
+        <activity
+            android:name=".cafe_end_real"
+            android:exported="false" />
+        <activity
+            android:name=".cafe_end_real_play"
+            android:exported="false" />
+        <activity
+            android:name=".cafe_pay"
+            android:exported="false" />
+        <activity
+            android:name=".cafe_point"
+            android:exported="false" />
+        <activity
+            android:name=".cafe_cart"
+            android:exported="false" />
+        <activity
+            android:name=".cafe_main"
+            android:exported="false" />
     </application>
 
 </manifest>

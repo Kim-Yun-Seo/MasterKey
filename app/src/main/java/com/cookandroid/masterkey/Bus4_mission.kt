@@ -24,7 +24,7 @@ class Bus4_mission : AppCompatActivity() {
         // Set OnClickListener for the right button
         btnRightImageView.setOnClickListener {
             // Handle the right button click
-            val intent = Intent(this, MainActivity_playmode::class.java)
+            val intent = Intent(this, MainActivity_sencond::class.java)
             startActivity(intent)
         }//Tool
 

@@ -23,7 +23,7 @@ class Bus_missionsucceed : AppCompatActivity() {
 
         }
         btn2.setOnClickListener {
-            val intent = Intent(this, MainActivity_second::class.java)
+            val intent = Intent(this, MainActivity_sencond::class.java)
             startActivity(intent)
 
         }

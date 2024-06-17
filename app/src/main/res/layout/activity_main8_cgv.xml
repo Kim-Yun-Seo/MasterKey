@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".cgv8">
+    tools:context=".mission_cgv8">
 
     <ImageView
         android:id="@+id/imageButton8_1_cgv"
@@ -22,7 +22,7 @@
             android:orientation="vertical"
             android:padding="4dp">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/Button8_2_cgv"
                 android:layout_width="270dp"
                 android:layout_height="wrap_content"
@@ -34,7 +34,7 @@
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="10dp" />
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/Button8_3_cgv"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"

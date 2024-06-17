@@ -42,7 +42,7 @@ class Bus5 : AppCompatActivity() {
         // Set OnClickListener for the right button
         btnRightImageView.setOnClickListener {
             // Handle the right button click
-            val intent = Intent(this, MainActivity_practicemode::class.java)
+            val intent = Intent(this, MainActivity_sencond::class.java)
             startActivity(intent)
         }//Tool
 
@@ -64,7 +64,7 @@ class Bus5 : AppCompatActivity() {
 
         homeButton.setOnClickListener {
             // Start MainActivity
-            val intent = Intent(this@Bus5, MainActivity::class.java)
+            val intent = Intent(this@Bus5, Bus1::class.java)
             startActivity(intent)
         }
 

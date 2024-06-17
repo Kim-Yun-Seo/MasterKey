@@ -16,21 +16,6 @@ class hosptial_success_finish : AppCompatActivity() {
         btnGoBackKiosk = findViewById<Button>(R.id.btnGoBackKiosk)
         btnGoHome = findViewById<Button>(R.id.btnGoHome)
 
-        val btnLeftImageView = findViewById<ImageView>(R.id.btnLeft)
-        val btnRightImageView = findViewById<ImageView>(R.id.btnRight)
-        //Tool bar Back Button
-        btnLeftImageView.setOnClickListener {
-            val intent = Intent(this, mission_hospital_5::class.java)
-            startActivity(intent)
-            finish()
-        }
-
-        // Tool bar Home Button
-        btnRightImageView.setOnClickListener {
-            val intent = Intent(this, MainActivity_sencond::class.java)
-            startActivity(intent)
-            finish()
-        }
 
         //키오스크로 돌아가는 intent
         btnGoBackKiosk.setOnClickListener{

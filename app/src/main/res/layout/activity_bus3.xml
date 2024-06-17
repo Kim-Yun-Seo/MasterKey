@@ -34,10 +34,10 @@
             android:layout_centerHorizontal="true" />
         <ImageView
             android:id="@+id/btnRight"
-            android:layout_width="180px"
-            android:layout_height="180px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:src="@drawable/home"
+            android:src="@drawable/home_toolbar"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:contentDescription="Right Button" />
@@ -57,11 +57,10 @@
 
         <ImageView
             android:id="@+id/imageButton"
-            android:layout_width="60dp"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
             android:backgroundTint="#00000000"
-            app:srcCompat="@drawable/search" />
-
+            app:srcCompat="@drawable/search_bus" />
     </LinearLayout>
 
     <LinearLayout
@@ -180,6 +179,7 @@
                     android:textSize="20dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
                     android:text="ㄱ"></Button>
 
                 <Button
@@ -188,6 +188,7 @@
                     android:textSize="20dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
                     android:text="ㄴ"></Button>
 
                 <Button
@@ -196,6 +197,7 @@
                     android:textSize="20dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
                     android:text="ㄷ"></Button>
 
                 <Button
@@ -204,6 +206,7 @@
                     android:textSize="20dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
                     android:text="ㄹ"></Button>
 
                 <Button
@@ -212,13 +215,16 @@
                     android:textSize="20dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
                     android:text="ㅁ"></Button>
 
                 <Button
                     android:id="@+id/f_bus"
                     android:layout_width="60dp"
-                    android:layout_height="36dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
                     android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
                     android:text="ㅂ"></Button>
 
                 <Button
@@ -227,6 +233,7 @@
                     android:textSize="20dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
                     android:text="ㅅ"></Button>
 
                 <Button
@@ -235,6 +242,7 @@
                     android:textSize="20dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
                     android:text="ㅇ"></Button>
 
                 <Button
@@ -243,6 +251,7 @@
                     android:textSize="20dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
                     android:text="ㅈ"></Button>
 
                 <Button
@@ -251,6 +260,7 @@
                     android:textSize="20dp"
                     android:layout_height="wrap_content"
                     android:backgroundTint="#FFC107"
+                    android:textStyle="bold"
                     android:text="ㅊ"></Button>
             </LinearLayout>
         </ScrollView>
@@ -272,7 +282,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="담양" />
 
                 <Button
@@ -280,7 +291,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="당목" />
             </TableRow>
 
@@ -294,7 +306,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="대덕" />
 
                 <Button
@@ -302,7 +315,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="덕양" />
             </TableRow>
 
@@ -316,7 +330,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="도촌" />
 
                 <Button
@@ -324,7 +339,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="독천" />
             </TableRow>
 
@@ -338,7 +354,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="동광양" />
 
                 <Button
@@ -346,7 +363,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="땅끝" />
             </TableRow>
 
@@ -360,7 +378,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="마량" />
 
                 <Button
@@ -368,7 +387,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="망운" />
             </TableRow>
 
@@ -382,7 +402,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="목사동" />
 
                 <Button
@@ -390,7 +411,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="목포" />
             </TableRow>
 
@@ -404,7 +426,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="목포대" />
 
                 <Button
@@ -412,7 +435,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="무안" />
             </TableRow>
 
@@ -426,7 +450,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="무안공항" />
 
                 <Button
@@ -434,7 +459,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="문덕" />
             </TableRow>
         </TableLayout>
@@ -457,7 +483,8 @@
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="센트럴
                 시티" />
 
@@ -466,7 +493,8 @@
                     android:layout_width="110dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="고속버스터미널" />
             </TableRow>
 
@@ -480,7 +508,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="서울역" />
 
                 <Button
@@ -488,7 +517,8 @@
                     android:layout_width="110dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
-                    android:backgroundTint="#CFCFCF"
+                    android:backgroundTint="#FF9800"
+                    android:textStyle="bold"
                     android:text="동서울" />
 
 
@@ -496,6 +526,3 @@
         </TableLayout>
     </LinearLayout>
 </LinearLayout>
-
-
-

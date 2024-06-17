@@ -25,20 +25,20 @@
 
     <ImageView
         android:id="@+id/btn_mission_start"
-        android:layout_width="198dp"
-        android:layout_height="63dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="470dp"
+        android:layout_marginTop="480dp"
         android:backgroundTint="#00FFFFFF"
         android:src="@drawable/mission_start" />
 
     <ImageView
         android:id="@+id/btn_home"
-        android:layout_width="135dp"
-        android:layout_height="34dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="550dp"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/mission_home" />
+        android:src="@drawable/gotohome" />
 
 </FrameLayout>

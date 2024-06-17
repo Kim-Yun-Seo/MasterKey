@@ -18,6 +18,20 @@ class cafe_pay : AppCompatActivity() {
         val backButton: ImageView = findViewById(R.id.btnLeft)
         val homeButton: ImageView = findViewById(R.id.btnRight)
 
+        // Tool bar back button
+        backButton.setOnClickListener {
+            val intent = Intent(this, cafe_point::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        // Tool bar Home Button
+        homeButton.setOnClickListener {
+            val intent = Intent(this, MainActivity_sencond::class.java)
+            startActivity(intent)
+            finish()
+        }
+
         backButton.setOnClickListener {
             var intent = Intent(this, cafe_point::class.java)
             startActivity(intent)

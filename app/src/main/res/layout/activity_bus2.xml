@@ -35,10 +35,10 @@
             android:layout_centerHorizontal="true" />
         <ImageView
             android:id="@+id/btnRight"
-            android:layout_width="180px"
-            android:layout_height="180px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:src="@drawable/home"
+            android:src="@drawable/home_toolbar"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:contentDescription="Right Button" />
@@ -54,11 +54,11 @@
             android:id="@+id/imageView3"
             android:layout_width="43dp"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/calender" />
+            app:srcCompat="@drawable/calender_bus" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="출발 일"
+            android:text="출발일"
             android:textSize="30dp"/>
     </LinearLayout>
     <LinearLayout
@@ -113,7 +113,7 @@
             android:layout_width="89dp"
             android:layout_height="73dp"
             android:layout_gravity="center"
-            android:src="@drawable/arrow"></ImageView>
+            android:src="@drawable/arrow_bus"></ImageView>
 
         <Button
             android:id="@+id/desbus"

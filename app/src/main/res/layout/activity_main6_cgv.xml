@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".cgv6">
+    tools:context=".mission_cgv6">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -46,10 +46,10 @@
         <!-- 오른쪽 버튼 -->
         <ImageView
             android:id="@+id/btnRight"
-            android:layout_width="180px"
-            android:layout_height="180px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:src="@drawable/icon_home_cgv"
+            android:src="@drawable/home_toolbar"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:contentDescription="Right Button" />
@@ -157,47 +157,47 @@
             android:layout_width="11dp"
             android:layout_height="30dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_A0_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_A1_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_A2_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_A3_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_A4_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_A5_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_A6_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_A7_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_A8_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
@@ -234,47 +234,47 @@
             android:layout_width="11dp"
             android:layout_height="30dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_B0_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_B1_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_B2_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_B3_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_B4_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_B5_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_B6_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_B7_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_B8_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
@@ -312,47 +312,47 @@
             android:layout_width="11dp"
             android:layout_height="30dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_C0_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_C1_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_C2_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_C3_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_C4_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_C5_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_C6_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_C7_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_C8_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
@@ -389,47 +389,47 @@
             android:layout_width="11dp"
             android:layout_height="30dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_D0_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_D1_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_D2_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_D3_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_D4_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_D5_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_D6_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_D7_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_D8_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
@@ -467,22 +467,22 @@
             android:layout_width="11dp"
             android:layout_height="30dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_E0_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_E1_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_E2_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_E3_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
@@ -491,17 +491,17 @@
             android:textColor="@color/white"
             android:textSize="11dp"
             android:backgroundTint="#FF0000"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_E4_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_E5_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_E6_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
@@ -536,37 +536,37 @@
         <Space
             android:layout_width="11dp"
             android:layout_height="30dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_F0_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_F1_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_F2_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_F3_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_F4_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_F5_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_6_F6_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
@@ -603,37 +603,37 @@
             android:layout_width="11dp"
             android:layout_height="30dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_G1_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_G2_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_G3_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_G4_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_G5_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_G6_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_G7_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
@@ -670,47 +670,47 @@
             android:layout_width="11dp"
             android:layout_height="30dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_H0_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_H1_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_H2_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_H3_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_H4_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_H5_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_H6_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_H7_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
             android:layout_height="35dp"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seat_5_H8_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="35dp"
@@ -736,7 +736,7 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/seatchoicebox_6_1_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="30dp"
@@ -756,7 +756,7 @@
             android:layout_width="5dp"
             android:layout_height="30dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/reservedbox_6_1_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="30dp"
@@ -775,7 +775,7 @@
             android:layout_width="5dp"
             android:layout_height="30dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/reclinerbox_6_1_cgv"
             style="@android:style/Widget.Button"
             android:layout_width="30dp"
@@ -868,7 +868,7 @@
             android:layout_width="5dp"
             android:layout_height="40dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/pay_6_cgv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

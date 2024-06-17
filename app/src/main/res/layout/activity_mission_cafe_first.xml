@@ -37,7 +37,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="450dp"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/mission_start_hos" />
+        android:src="@drawable/mission_start" />
 
     <ImageButton
         android:id="@+id/btn_goToHome"

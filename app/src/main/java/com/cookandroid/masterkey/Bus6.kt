@@ -25,15 +25,14 @@ class Bus6 : AppCompatActivity() {
             val intent = Intent(this, Bus5::class.java)
             startActivity(intent)
         }
-
         // Set OnClickListener for the right button
         btnRightImageView.setOnClickListener {
             // Handle the right button click
-            val intent = Intent(this, MainActivity_practicemode::class.java)
+            val intent = Intent(this, MainActivity_sencond::class.java)
             startActivity(intent)
         }
         home.setOnClickListener{
-            val intent = Intent(this,MainActivity_practicemode::class.java)
+            val intent = Intent(this,Bus1::class.java)
             startActivity(intent)
         }
         btnreq.setOnClickListener{
@@ -42,15 +41,12 @@ class Bus6 : AppCompatActivity() {
         }//Tool
 
         val sharedPreferences = getPreferences(Context.MODE_PRIVATE)
-        val lastClickedButton = sharedPreferences.getString("lastClickedButton", "기본값")
+        val lastClickedButton = sharedPreferences.getString("lastClickedButton", "서울 센트럴 시티")
 
         // 목적지 텍스트 설정
         val realdesTextView = findViewById<TextView>(R.id.realdes)
         realdesTextView.text = lastClickedButton
 
-        // Bus5Activity에서 총 가격 가져오기
-        val totalPrice = intent.getDoubleExtra("totalPrice", 0.0) // 찾을 수 없을 경우의 기본값으로 0.0을 대체하세요
-        val priceTextView = findViewById<TextView>(R.id.price)
-        priceTextView.text = totalPrice.toString()
+
     }
 }

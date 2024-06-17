@@ -30,11 +30,11 @@ class cgv6 : AppCompatActivity(), View.OnClickListener {
             }
             R.id.btnRight -> {
                 // '홈' 버튼 클릭 시 2번째 페이지로 이동
-                val intent = Intent(this, MainActivity_second::class.java)
+                val intent = Intent(this, MainActivity_sencond::class.java)
                 startActivity(intent)
             }
             R.id.pay_6_cgv -> {
-                // '좌석 선택' 버튼 클릭 시 다음 페이지로 이동
+                // '결제 하기' 버튼 클릭 시 다음 페이지로 이동
                 val intent = Intent(this, cgv7::class.java)
                 startActivity(intent)
             }

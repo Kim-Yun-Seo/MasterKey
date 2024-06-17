@@ -37,10 +37,10 @@
 
         <ImageView
             android:id="@+id/btnRight"
-            android:layout_width="180px"
-            android:layout_height="180px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:src="@drawable/home"
+            android:src="@drawable/home_toolbar"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:contentDescription="Right Button" />
@@ -57,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:background="#FFE8C9"
-            android:drawableLeft="@drawable/heartbeat"
+            android:drawableLeft="@drawable/heartbeat_hospital"
             android:gravity="center"
             android:paddingLeft="20dp"
             android:text="병원에 처음 방문하신 분은 데스크로 오세요."
@@ -86,7 +86,7 @@
             android:adjustViewBounds="true"
             android:backgroundTint="#00FFFFFF"
             android:scaleType="fitCenter"
-            android:src="@drawable/accept_icon"></ImageButton>
+            android:src="@drawable/accept_hospital"></ImageButton>
 
         <ImageButton
             android:id="@+id/btnPayment"
@@ -97,7 +97,7 @@
             android:backgroundTint="#00FFFFFF"
             android:scaleType="fitCenter"
             android:onClick="onClickImageButton"
-            android:src="@drawable/payment_icon"></ImageButton>
+            android:src="@drawable/payment_hospital"></ImageButton>
 
     </LinearLayout>
 

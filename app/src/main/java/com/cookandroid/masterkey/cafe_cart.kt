@@ -34,6 +34,11 @@ class cafe_cart : AppCompatActivity() {
             startActivity(intent)
         }
 
+        homeButton.setOnClickListener {
+            var intent = Intent(this, MainActivity_sencond::class.java)
+            startActivity(intent)
+        }
+
         numberCafeButton.setOnClickListener {
             changeText(resultTextView)
         }
@@ -46,6 +51,7 @@ class cafe_cart : AppCompatActivity() {
         cancelButton.setOnClickListener {
             menuCancel(firstMenu)
             menuCancel(secondMenu)
+            changeText(resultTextView)
             menuTextCancel(text8)
             menuTextCancel(text9)
             cartBoxCancel(cafeBox1)
@@ -54,7 +60,7 @@ class cafe_cart : AppCompatActivity() {
 
     }
     private fun changeText(textView: TextView) {
-        textView.text = "20"
+        textView.text = "₩0"
     }
 
     private fun menuCancel(imageView: ImageView) {
@@ -67,6 +73,9 @@ class cafe_cart : AppCompatActivity() {
 
     private fun cartBoxCancel(imageView: ImageView) {
         imageView.setImageResource(R.drawable.cafe_box)
+    }
+    private fun cancelPrice(textView: TextView) {
+        textView.text = "₩0"
     }
 
 }

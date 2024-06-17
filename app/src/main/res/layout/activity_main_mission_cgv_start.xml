@@ -20,14 +20,14 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:src="@drawable/kitty_icon"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="230dp"
+        android:layout_marginTop="200dp"
         android:src="@drawable/mission_text_cgv" />
 
     <ImageButton
@@ -35,17 +35,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="465dp"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/mission_start_cgv" />
+        android:src="@drawable/mission_start" />
 
     <ImageButton
         android:id="@+id/btn_gobackhome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="580dp"
+        android:layout_marginTop="530dp"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/mission_start_cgv" /> //홈으로 가기 버튼으로 변경 필요
+        android:src="@drawable/gotohome" /> //홈으로 가기 버튼으로 변경 필요
 
 </FrameLayout>

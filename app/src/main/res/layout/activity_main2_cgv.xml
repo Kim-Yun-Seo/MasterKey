@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".cgv2">
+    tools:context=".mission_cgv2">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -46,10 +46,10 @@
         <!-- 오른쪽 버튼 -->
         <ImageView
             android:id="@+id/btnRight"
-            android:layout_width="180px"
-            android:layout_height="180px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:src="@drawable/icon_home_cgv"
+            android:src="@drawable/home_toolbar"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:contentDescription="Right Button" />
@@ -61,18 +61,6 @@
         android:layout_width="match_parent"
         android:layout_height="50dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:padding="5dp">
-        <Button
-            android:id="@+id/upArrow_2_cgv"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/icon_up_arrow_cgv"/>
-    </LinearLayout>
     <Space
         android:layout_width="match_parent"
         android:layout_height="20dp" />
@@ -83,7 +71,7 @@
         android:orientation="horizontal"
         android:gravity="center">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Button2_1_cgv"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
@@ -98,7 +86,7 @@
             android:layout_width="5dp"
             android:layout_height="45dp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/Button2_2_cgv"
             android:layout_width="225dp"
             android:layout_height="wrap_content"
@@ -179,18 +167,6 @@
     <Space
         android:layout_width="5dp"
         android:layout_height="30dp" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:padding="5dp">
 
-        <Button
-            android:id="@+id/downArrow_2_cgv"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/icon_down_arrow_cgv"/>
-    </LinearLayout>
 
 </LinearLayout>

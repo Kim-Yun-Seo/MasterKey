@@ -23,14 +23,14 @@ class Bus3 : AppCompatActivity(), View.OnClickListener {
 
         // Set OnClickListener for the left button
         btnLeftImageView.setOnClickListener {
-            val intent = Intent(this, Bus2_mission::class.java)
+            val intent = Intent(this, Bus2::class.java)
             startActivity(intent)
         }
 
         // Set OnClickListener for the right button
         btnRightImageView.setOnClickListener {
             // Handle the right button click
-            val intent = Intent(this, MainActivity_practicemode::class.java)
+            val intent = Intent(this, MainActivity_sencond::class.java)
             startActivity(intent)
         }//Tool
 

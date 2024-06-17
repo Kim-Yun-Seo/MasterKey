@@ -35,10 +35,10 @@
             android:layout_centerHorizontal="true" />
         <ImageView
             android:id="@+id/btnRight"
-            android:layout_width="180px"
-            android:layout_height="180px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:src="@drawable/home"
+            android:src="@drawable/home_toolbar"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:contentDescription="Right Button" />
@@ -131,7 +131,7 @@
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:background="@drawable/editphone"
+            android:background="@drawable/editbox2_hospital"
             android:text="이전"
             android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
 
@@ -140,7 +140,7 @@
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:background="@drawable/editphone"
+            android:background="@drawable/editbox2_hospital"
             android:text="다음"
             android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
 

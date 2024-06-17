@@ -24,14 +24,14 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/kioskAgain"
-            android:layout_width="270dp"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:background="@drawable/round_button_cafe"
             android:backgroundTint="#FFC24D"
-            android:text="키오스크 다시 선택하러 가기"
-            android:textStyle="bold"
+            android:text="처음으로"
             android:textColor="@color/white"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textStyle="bold" />
         <Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />

@@ -45,7 +45,7 @@ class Bus1 : AppCompatActivity() {
         // Set OnClickListener for the right button
         btnRightImageView.setOnClickListener {
             // Handle the right button click
-            val intent = Intent(this, MainActivity_second::class.java)
+            val intent = Intent(this, MainActivity_sencond::class.java)
             startActivity(intent)
         }
 
@@ -57,10 +57,8 @@ class Bus1 : AppCompatActivity() {
 
         }
 
-        // ... (rest of your code)
     }
 
-    // Function to navigate to the BusActivity
 }
 
 

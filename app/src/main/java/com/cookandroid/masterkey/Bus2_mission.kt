@@ -22,10 +22,9 @@ class Bus2_mission : AppCompatActivity() {
 
         // Set OnClickListener for the right button
         btnRightImageView.setOnClickListener {
-            // Handle the right button click
-            val intent = Intent(this, MainActivity_playmode::class.java)
+            val intent = Intent(this, MainActivity_sencond::class.java)
             startActivity(intent)
-        }//Tool
+        }
 
         val btnbtnnebus = findViewById<Button>(R.id.btnnebus)
         val btnyesbus = findViewById<Button>(R.id.btnyesbus)

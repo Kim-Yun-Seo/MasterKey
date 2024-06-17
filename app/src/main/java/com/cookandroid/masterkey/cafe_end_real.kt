@@ -18,7 +18,7 @@ class cafe_end_real : AppCompatActivity() {
         val kioskAgain: AppCompatButton = findViewById(R.id.kioskAgain)
 
         goTohomeButton.setOnClickListener {
-            var intent = Intent(this, cafe_main::class.java)
+            var intent = Intent(this, MainActivity_sencond::class.java)
             startActivity(intent)
         }
         kioskAgain.setOnClickListener {

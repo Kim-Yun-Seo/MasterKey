@@ -28,10 +28,14 @@ class mission_cafe_cart : AppCompatActivity() {
         val toPayButton: ImageView = findViewById(R.id.payBtn)
         val backButton: ImageView = findViewById(R.id.btnLeft)
         val homeButton: ImageView = findViewById(R.id.btnRight)
-        val kkk = "hello"
 
         backButton.setOnClickListener {
             var intent = Intent(this, mission_cafe_main::class.java)
+            startActivity(intent)
+        }
+
+        homeButton.setOnClickListener {
+            var intent = Intent(this, MainActivity_sencond::class.java)
             startActivity(intent)
         }
 
@@ -45,12 +49,12 @@ class mission_cafe_cart : AppCompatActivity() {
         }
 
         cancelButton.setOnClickListener {
-            menuCancel(firstMenu)
-            menuCancel(secondMenu)
-            menuTextCancel(text8)
-            menuTextCancel(text9)
-            cartBoxCancel(cafeBox1)
-            cartBoxCancel(cafeBox2)
+            var dlg = AlertDialog.Builder(this@mission_cafe_cart)
+            dlg.setTitle("다시 선택해주세요!")
+            dlg.setMessage("결제 하기를 눌러주세요.")
+            dlg.setIcon(R.drawable.error_icon)
+            dlg.setPositiveButton("확인", null)
+            dlg.show()
         }
 
     }

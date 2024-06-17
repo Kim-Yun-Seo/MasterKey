@@ -35,10 +35,10 @@
             android:layout_centerHorizontal="true" />
         <ImageView
             android:id="@+id/btnRight"
-            android:layout_width="180px"
-            android:layout_height="180px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:src="@drawable/home"
+            android:src="@drawable/home_toolbar"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:contentDescription="Right Button" />
@@ -73,7 +73,7 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="center"
-        android:src="@drawable/hospitalroom1"></ImageButton>
+        android:src="@drawable/room1_hospital"></ImageButton>
 
     <ImageButton
         android:id="@+id/btn_hospital2"
@@ -82,7 +82,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/hospitalroom2"></ImageButton>
+        android:src="@drawable/room2_hospital"></ImageButton>
 
     <ImageButton
         android:id="@+id/btn_hospital3"
@@ -91,7 +91,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/hospitalroom3"></ImageButton>
+        android:src="@drawable/room3_hospital"></ImageButton>
 
     <ImageButton
         android:id="@+id/btn_hospital4"
@@ -100,7 +100,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/hospitalroom4"></ImageButton>
+        android:src="@drawable/room4_hospital"></ImageButton>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -115,7 +115,7 @@
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:background="@drawable/editphone"
+            android:background="@drawable/editbox2_hospital"
             android:text="이전"
             android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
 
@@ -124,7 +124,7 @@
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:background="@drawable/editphone"
+            android:background="@drawable/editbox2_hospital"
             android:text="다음"
             android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
 

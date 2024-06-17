@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 
+
 class cgv4 : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,12 +31,11 @@ class cgv4 : AppCompatActivity(), View.OnClickListener {
             }
             R.id.btnRight -> {
                 // '홈' 버튼 클릭 시 2번째 페이지로 이동
-                val intent = Intent(this, MainActivity_second::class.java)
+                val intent = Intent(this, MainActivity_sencond::class.java)
                 startActivity(intent)
             }
             R.id.ChooseSeat_4_cgv -> {
                 // '좌석 선택' 버튼 클릭 시 다음 페이지로 이동
-                // 여기서는 임의의 다음 페이지(SeatSelectionActivity::class.java)로 설정하였습니다.
                 val intent = Intent(this, cgv5::class.java)
                 startActivity(intent)
             }

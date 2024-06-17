@@ -37,10 +37,10 @@
 
         <ImageView
             android:id="@+id/btnRight"
-            android:layout_width="180px"
-            android:layout_height="180px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:src="@drawable/home"
+            android:src="@drawable/home_toolbar"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:contentDescription="Right Button" />
@@ -71,7 +71,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/editphone"
+            android:background="@drawable/editbox2_hospital"
             android:text="휴대전화번호"></androidx.appcompat.widget.AppCompatButton>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -111,7 +111,7 @@
         android:layout_below="@+id/editTextPhone2"
         android:layout_toLeftOf="@id/btn_2"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/phonebtn1"></ImageButton>
+        android:src="@drawable/phonebtn1_hospital"></ImageButton>
 
     <ImageButton
         android:id="@+id/btn_2"
@@ -120,7 +120,7 @@
         android:layout_below="@+id/editTextPhone2"
         android:layout_centerHorizontal="true"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/phonebtn2"></ImageButton>
+        android:src="@drawable/phonebtn2_hospital"></ImageButton>
     <ImageButton
         android:id="@+id/btn_3"
         android:layout_width="60dp"
@@ -128,7 +128,7 @@
         android:layout_below="@+id/editTextPhone2"
         android:layout_toRightOf="@id/btn_2"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/phonebtn3"></ImageButton>
+        android:src="@drawable/phonebtn3_hospital"></ImageButton>
     <ImageButton
         android:id="@+id/btn_4"
         android:layout_width="60dp"
@@ -136,7 +136,7 @@
         android:layout_below="@+id/btn_1"
         android:layout_toLeftOf="@id/btn_2"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/phonebtn4"></ImageButton>
+        android:src="@drawable/phonebtn4_hospital"></ImageButton>
     <ImageButton
         android:id="@+id/btn_5"
         android:layout_width="60dp"
@@ -144,7 +144,7 @@
         android:layout_below="@+id/btn_2"
         android:layout_centerHorizontal="true"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/phonebtn5"></ImageButton>
+        android:src="@drawable/phonebtn5_hospital"></ImageButton>
     <ImageButton
         android:id="@+id/btn_6"
         android:layout_width="60dp"
@@ -152,7 +152,7 @@
         android:layout_below="@+id/btn_2"
         android:layout_toRightOf="@id/btn_2"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/phonebtn6"></ImageButton>
+        android:src="@drawable/phonebtn6_hospital"></ImageButton>
     <ImageButton
         android:id="@+id/btn_7"
         android:layout_width="60dp"
@@ -160,7 +160,7 @@
         android:layout_below="@+id/btn_4"
         android:layout_toLeftOf="@id/btn_2"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/phonebtn7"></ImageButton>
+        android:src="@drawable/phonebtn7_hospital"></ImageButton>
     <ImageButton
         android:id="@+id/btn_8"
         android:layout_width="60dp"
@@ -168,7 +168,7 @@
         android:layout_below="@+id/btn_5"
         android:layout_centerHorizontal="true"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/phonebtn8"></ImageButton>
+        android:src="@drawable/phonebtn8_hospital"></ImageButton>
     <ImageButton
         android:id="@+id/btn_9"
         android:layout_width="60dp"
@@ -176,7 +176,7 @@
         android:layout_below="@+id/btn_5"
         android:layout_toRightOf="@id/btn_2"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/phonebtn9"></ImageButton>
+        android:src="@drawable/phonebtn9_hospital"></ImageButton>
     <ImageButton
         android:id="@+id/btn_10"
         android:layout_width="60dp"
@@ -184,7 +184,7 @@
         android:layout_below="@+id/btn_8"
         android:layout_toLeftOf="@id/btn_2"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/phonebtn10"></ImageButton>
+        android:src="@drawable/phonebtn10_hospital"></ImageButton>
     <ImageButton
         android:id="@+id/btn_11"
         android:layout_width="60dp"
@@ -192,7 +192,7 @@
         android:layout_below="@+id/btn_8"
         android:layout_centerHorizontal="true"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/phonebtn11"></ImageButton>
+        android:src="@drawable/phonebtn11_hospital"></ImageButton>
     <ImageButton
         android:id="@+id/btn_12"
         android:layout_width="60dp"
@@ -200,7 +200,7 @@
         android:layout_below="@+id/btn_8"
         android:layout_toRightOf="@id/btn_5"
         android:backgroundTint="#00FFFFFF"
-        android:src="@drawable/phonebtn12"></ImageButton>
+        android:src="@drawable/phonebtn12_hospital"></ImageButton>
 
     <CheckBox
         android:id="@+id/chkBx1"
@@ -226,7 +226,7 @@
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:background="@drawable/editphone"
+            android:background="@drawable/editbox2_hospital"
             android:text="이전"
             android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
 
@@ -235,7 +235,7 @@
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
-            android:background="@drawable/editphone"
+            android:background="@drawable/editbox2_hospital"
             android:text="다음"
             android:textStyle="bold"></androidx.appcompat.widget.AppCompatButton>
 

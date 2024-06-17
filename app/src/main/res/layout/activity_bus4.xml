@@ -33,10 +33,10 @@
             android:layout_centerHorizontal="true" />
         <ImageView
             android:id="@+id/btnRight"
-            android:layout_width="180px"
-            android:layout_height="180px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:src="@drawable/home"
+            android:src="@drawable/home_toolbar"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:contentDescription="Right Button" />
@@ -58,7 +58,7 @@
                 android:id="@+id/imageView3"
                 android:layout_width="43dp"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/calender" />
+                app:srcCompat="@drawable/calender_bus" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -112,7 +112,7 @@
             android:id="@+id/timetable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/bustimetable" />
+            app:srcCompat="@drawable/timetable_bus" />
 
         <ImageView
             android:id="@+id/arrow1"
@@ -121,7 +121,7 @@
             android:layout_gravity="right"
             android:layout_marginTop="95dp"
             android:layout_marginRight="5dp"
-            app:srcCompat="@drawable/busarrow3" />
+            app:srcCompat="@drawable/arrow3_bus" />
 
         <ImageView
             android:id="@+id/arrow2"
@@ -130,7 +130,7 @@
             android:layout_gravity="right"
             android:layout_marginTop="140dp"
             android:layout_marginRight="5dp"
-            app:srcCompat="@drawable/busarrow3" />
+            app:srcCompat="@drawable/arrow3_bus" />
 
         <ImageView
             android:id="@+id/arrow3"
@@ -139,7 +139,7 @@
             android:layout_gravity="right"
             android:layout_marginTop="183dp"
             android:layout_marginRight="5dp"
-            app:srcCompat="@drawable/busarrow3" />
+            app:srcCompat="@drawable/arrow3_bus" />
 
         <ImageView
             android:id="@+id/arrow4"
@@ -148,7 +148,7 @@
             android:layout_gravity="right"
             android:layout_marginTop="225dp"
             android:layout_marginRight="5dp"
-            app:srcCompat="@drawable/busarrow3" />
+            app:srcCompat="@drawable/arrow3_bus" />
 
         <ImageView
             android:id="@+id/arrow5"
@@ -157,7 +157,7 @@
             android:layout_gravity="right"
             android:layout_marginTop="265dp"
             android:layout_marginRight="5dp"
-            app:srcCompat="@drawable/busarrow3" />
+            app:srcCompat="@drawable/arrow3_bus" />
 
 
 

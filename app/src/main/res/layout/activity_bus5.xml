@@ -39,13 +39,13 @@
 
         <ImageView
             android:id="@+id/btnRight"
-            android:layout_width="180px"
-            android:layout_height="180px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:contentDescription="Right Button"
+            android:src="@drawable/home_toolbar"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
-            android:src="@drawable/home" />
+            android:contentDescription="Right Button" />
     </Toolbar>
 
     <FrameLayout
@@ -87,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
             android:layout_marginTop="170dp"
-            app:srcCompat="@drawable/seat" />
+            app:srcCompat="@drawable/seat_bus" />
 
         <ImageView
             android:id="@+id/seat2"
@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="230dp"
-            app:srcCompat="@drawable/seat" />
+            app:srcCompat="@drawable/seat_bus" />
 
         <ImageView
             android:id="@+id/seat3"
@@ -103,49 +103,49 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
             android:layout_marginTop="230dp"
-            app:srcCompat="@drawable/seat" />
+            app:srcCompat="@drawable/seat_bus" />
         <ImageView
             android:id="@+id/seat4"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="290dp"
-            app:srcCompat="@drawable/seat" />
+            app:srcCompat="@drawable/seat_bus" />
         <ImageView
             android:id="@+id/seat5"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
             android:layout_marginTop="290dp"
-            app:srcCompat="@drawable/seat" />
+            app:srcCompat="@drawable/seat_bus" />
         <ImageView
             android:id="@+id/seat6"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="350dp"
-            app:srcCompat="@drawable/seat" />
+            app:srcCompat="@drawable/seat_bus" />
         <ImageView
             android:id="@+id/seat7"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
             android:layout_marginTop="350dp"
-            app:srcCompat="@drawable/seat" />
+            app:srcCompat="@drawable/seat_bus" />
         <ImageView
             android:id="@+id/seat8"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="410dp"
-            app:srcCompat="@drawable/seat" />
+            app:srcCompat="@drawable/seat_bus" />
         <ImageView
             android:id="@+id/seat9"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
             android:layout_marginTop="410dp"
-            app:srcCompat="@drawable/seat" />
+            app:srcCompat="@drawable/seat_bus" />
 
         <TextView
             android:id="@+id/departue"
@@ -164,7 +164,7 @@
             android:layout_gravity="right"
             android:layout_marginTop="50dp"
             android:layout_marginRight="30dp"
-            app:srcCompat="@drawable/arrow" />
+            app:srcCompat="@drawable/arrow_bus" />
 
         <TextView
             android:id="@+id/destination"
@@ -181,7 +181,7 @@
             android:layout_gravity="right"
             android:layout_marginTop="230dp"
             android:layout_marginRight="30dp"
-            app:srcCompat="@drawable/arrow2" />
+            app:srcCompat="@drawable/arrow2_bus" />
 
         <TextView
             android:id="@+id/totalpay"
@@ -202,7 +202,7 @@
 
             <Button
                 android:id="@+id/adult"
-                android:layout_width="142dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:backgroundTint="#FFC24D"
@@ -211,7 +211,7 @@
 
             <Button
                 android:id="@+id/junior"
-                android:layout_width="143dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:backgroundTint="#FFC24D"
@@ -221,7 +221,7 @@
 
             <Button
                 android:id="@+id/bohoon"
-                android:layout_width="143dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:backgroundTint="#FFC24D"
@@ -230,7 +230,7 @@
 
             <Button
                 android:id="@+id/cancel"
-                android:layout_width="144dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:backgroundTint="@color/white"
@@ -256,7 +256,7 @@
             android:layout_marginRight="10dp"
             android:contentDescription="Right Button"
             android:gravity="center|top"
-            android:src="@drawable/home" />
+            android:src="@drawable/home_toolbar" />
 
         <Button
             android:id="@+id/backbus"

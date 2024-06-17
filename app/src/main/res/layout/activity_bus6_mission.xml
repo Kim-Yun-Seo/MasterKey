@@ -39,13 +39,13 @@
 
         <ImageView
             android:id="@+id/btnRight"
-            android:layout_width="180px"
-            android:layout_height="180px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:contentDescription="Right Button"
+            android:src="@drawable/home_toolbar"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
-            android:src="@drawable/home"/>
+            android:contentDescription="Right Button" />
     </Toolbar>
 
     <FrameLayout
@@ -183,7 +183,7 @@
                 android:contentDescription="Right Button"
                 android:gravity="center|top"
                 android:layout_margin="20dp"
-                android:src="@drawable/home" />
+                android:src="@drawable/home_toolbar" />
 
             <Button
                 android:id="@+id/request"
